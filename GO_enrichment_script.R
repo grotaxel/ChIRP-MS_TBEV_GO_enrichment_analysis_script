@@ -66,7 +66,7 @@ write.table(ego_MF, file = "MF_human_clusterProfiler.tsv",
 write.table(ego_CC, file = "CC_human_clusterProfiler.tsv",
             sep = "\t", quote = FALSE, row.names = FALSE)
 
-#Retrieval of all level 4 (maximum) GO terms containing the query genes with groupGO()####
+#Retrieval of all level 4 (and higher) GO terms containing the query genes with groupGO()####
 ggo_BP <- groupGO(gene           = entrez_genes_human,
                   OrgDb         = org.Hs.eg.db,
                   keyType       = 'ENTREZID',
